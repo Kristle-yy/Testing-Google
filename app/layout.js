@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-W1E1562YQD"/>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-W1E1562YQD" />
       <Script>
         {`
         window.dataLayer = window.dataLayer || [];
@@ -36,6 +36,23 @@ export default function RootLayout({ children }) {
         gtag('config', 'G-W1E1562YQD');
         `}
       </Script>
+
+
+      <Script type="text/javascript"/>
+      <Script>
+        {`
+        var Tawk_API=Tawk_API||{ }, Tawk_LoadStart=new Date();
+        (function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6a6cb5020ff60a1d4cf17866/1jusa6gi5';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+})();
+`}
+      </Script>
+
       <body className="min-h-full flex flex-col">
 
         <Header />
