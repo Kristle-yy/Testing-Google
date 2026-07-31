@@ -26,19 +26,19 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W1E1562YQD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1E1562YQD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
 
-  gtag('config', 'G-W1E1562YQD');
-</script>
+          gtag('config', 'G-W1E1562YQD');
+        </script>
         <Header />
-          {children}
-          <Footer />
-          
-          </body>
+        {children}
+        <Footer />
+
+      </body>
     </html>
   );
 }
